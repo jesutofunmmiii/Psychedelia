@@ -82,8 +82,8 @@ function Footer() {
         <div><h4>Learn free</h4><ul><li><a href="learn.html#playlists">YouTube Playlists</a></li><li><a href="learn.html#breakdowns">Trade Breakdowns</a></li><li><a href="learn.html#reading">The Reading Room</a></li></ul></div>
         <div><h4>Contact Techriz</h4><div style={{display: 'flex', gap: '12px', flexWrap: 'wrap'}}>{PSY.socials.map(([n, u]) => <a key={n} className="socbtn" href={u} target="_blank" rel="noopener" aria-label={n}><SocialIcon name={n}></SocialIcon></a>)}</div><ul style={{marginTop: '18px'}}><li><a href="tel:+2348166374633">+234 816 637 4633</a></li><li><a href="mailto:techritz@psychedelia.com">techritz@psychedelia.com</a></li></ul></div>
       </div>
-      <details className="fnotes">
-        <summary><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1v12M1 7h12" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"></path></svg>Disclaimers and footnotes</summary>
+      <div className="fnotes">
+        <div className="fnotes-title">Disclaimers and footnotes</div>
         <div className="fn-body">
           <p>Psychedelia is an educational platform, not a licensed broker, investment adviser, or financial institution. Trading CFDs, futures, and commodities carries a high level of risk and may not be suitable for all investors. Past performance is not indicative of future results.</p>
           <ol>
@@ -95,7 +95,7 @@ function Footer() {
             <li>Testimonials and results shared by students or members are individual experiences and are not representative of typical outcomes. Trading results vary widely and no outcome is guaranteed.</li>
           </ol>
         </div>
-      </details>
+      </div>
       <div style={{display: 'flex', flexWrap: 'wrap', gap: '18px', alignItems: 'center', justifyContent: 'space-between', borderTop: '1px solid rgba(255,255,255,.08)', paddingTop: '28px'}}>
         <div style={{display: 'flex', alignItems: 'center', gap: '12px'}}><img src={(window.__resources && window.__resources.logoWhite) || 'assets/logo-white.png'} alt="" style={{width: '30px'}}></img><span style={{fontFamily: 'var(--psy-font-display)', letterSpacing: '.14em', fontSize: '12px', fontWeight: 600}}>PSYCHEDELIA</span></div>
         <p style={{margin: 0, fontSize: '12.5px', color: 'var(--psy-periwinkle)', maxWidth: '560px'}}>© 2026 Psychedelia. Africa's most trusted Forex Institute for Serious Traders. Trading involves substantial risk of loss — nothing on this site is financial advice.</p>

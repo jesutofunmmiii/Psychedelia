@@ -227,11 +227,7 @@ a.card{display:block}
 .socbtn{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.18);color:#fff!important;transition:background .25s,transform .25s,border-color .25s}
 .socbtn:hover{background:var(--psy-blue);border-color:var(--psy-blue);transform:translateY(-3px)}
 .fnotes{border-top:1px solid rgba(255,255,255,.08);margin-top:48px}
-.fnotes summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;padding:22px 0;font-family:var(--psy-font-display);font-weight:600;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--psy-periwinkle)}
-.fnotes summary::-webkit-details-marker{display:none}
-.fnotes summary svg{transition:transform .35s;flex:none}
-.fnotes[open] summary svg{transform:rotate(45deg)}
-.fnotes summary:hover{color:#fff}
+.fnotes-title{padding:22px 0 4px;font-family:var(--psy-font-display);font-weight:600;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--psy-periwinkle)}
 .fn-body{max-width:900px;padding:0 0 26px;color:rgba(200,213,255,.55);font-size:13px;line-height:1.6}
 .fn-body p{margin:0 0 14px}
 .fn-body ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:12px}
